@@ -1,6 +1,8 @@
-const addCardBtn = document.querySelector('.add-card')
-const cards = document.querySelector('.cards')
+const addCardBtn = document.querySelector('.add-card');
+const cards = document.querySelector('.cards');
+const addTaskForm = document.querySelector('.add-task');
 
+// add card
 addCardBtn.addEventListener('click', () => {
   html = `
     <div class="card border-secondary" style="width: 18rem;">
@@ -13,12 +15,26 @@ addCardBtn.addEventListener('click', () => {
       </div>
     </div>
   `;
-  console.log(html);
   cards.innerHTML += html;
 });
 
+// delete card
 cards.addEventListener('click', e => {
   if(e.target.classList.contains('delete-card')){
       e.target.parentElement.parentElement.remove();
   }
 });
+
+// add list item
+addTaskForm.addEventListener('submit', e => {
+  e.preventDefault();
+  message = addTaskForm.add.value.trim();
+  list = e.target.parentElement.querySelector('ul');
+  html = `
+  <li class="list-group-item">${message}</li>
+  `;
+  list.innerHTML += html;
+  addTaskForm.reset();
+});
+
+// delete list item
