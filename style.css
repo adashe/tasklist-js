@@ -9,3 +9,9 @@ body{
 .card{
     margin: 1em auto;
 }
+.delete-card{
+    cursor: pointer;
+}
+.delete-task{
+    cursor: pointer;
+}
