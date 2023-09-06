@@ -9,22 +9,27 @@
 </head>
 <body>
   <div class="container my-5 mx-auto">
-    <div class="cards-container">
-      <div class="card border-secondary" style="width: 18rem;">
-        <div class="card-body">
-          <div class="delete-card">X</div>
-          <h5 class="card-title">Card title</h5>
-          <ul class="list-group list-group-flush"></ul>
-          <form class="add-task text-center my-4">
-            <input class="form-control m-auto" type="text" name="add" placeholder="add task" />
-          </form>
-        </div>
+    <h1>Tasklist</h1>
+    <div class="row">
+      <div class="col-sm-auto mb-auto mb-sm-auto">
+        <form class="add-card" style="width: 18rem;">
+          <input class="form-control m-auto" type="text" name="add" placeholder="new card title" />
+        </form>
       </div>
     </div>
-    <div>
-      <form class="add-card my-5 mx-auto" style="width: 18rem;">
-        <input class="form-control m-auto" type="text" name="add" placeholder="new card title" />
-      </form>
+    <div class="cards-container row">
+      <div class="col-sm-auto mb-auto mb-sm-auto">
+        <div class="card border-secondary" style="width: 18rem;">
+          <div class="card-body">
+            <div class="delete-card text-end">X</div>
+            <h5 class="card-title">card title</h5>
+            <ul class="list-group list-group-flush"></ul>
+            <form class="add-task text-center my-4">
+              <input class="form-control m-auto" type="text" name="add" placeholder="add task" />
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

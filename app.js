@@ -8,14 +8,16 @@ addCard.addEventListener('submit', e => {
   e.preventDefault();
   title = e.target.add.value.trim();
   const html = `
-    <div class="card border-secondary" style="width: 18rem;">
-      <div class="card-body">
-        <div class="delete-card">X</div>
-        <h5 class="card-title">${title}</h5>
-        <ul class="list-group list-group-flush"></ul>
-        <form class="add-task text-center my-4">
-          <input class="form-control m-auto" type="text" name="add" placeholder="add task" />
-        </form>
+    <div class="col-sm-auto mb-auto mb-sm-auto">
+      <div class="card border-secondary" style="width: 18rem;">
+        <div class="card-body">
+          <div class="delete-card text-end">X</div>
+          <h5 class="card-title">${title}</h5>
+          <ul class="list-group list-group-flush"></ul>
+          <form class="add-task text-center my-4">
+            <input class="form-control m-auto" type="text" name="add" placeholder="add task" />
+          </form>
+        </div>
       </div>
     </div>
   `;

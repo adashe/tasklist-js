@@ -13,6 +13,9 @@ body{
     max-width: 400px;
 }
 .delete-card{
+    position: absolute;
+    top: .5em;
+    right: .5em;
     cursor: pointer;
 }
 .delete-task{
