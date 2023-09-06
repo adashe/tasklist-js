@@ -1,20 +1,18 @@
-const addCardBtn = document.querySelector('.add-card');
-const addTaskForms = document.querySelectorAll('.add-task');
+// DOM queries
+const addCard = document.querySelector('.add-card');
+// const addTaskForms = document.querySelectorAll('.add-task');
 const cardsContainer = document.querySelector('.cards-container');
 
-
 // add card
-addCardBtn.addEventListener('click', e => {
+addCard.addEventListener('submit', e => {
   e.preventDefault();
+  title = e.target.add.value.trim();
   const html = `
     <div class="card border-secondary" style="width: 18rem;">
       <div class="card-body">
         <div class="delete-card">X</div>
-        <h5 class="card-title">TITLE</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-        <ul class="list-group list-group-flush">
-          </li>
-        </ul>
+        <h5 class="card-title">${title}</h5>
+        <ul class="list-group list-group-flush"></ul>
         <form class="add-task text-center my-4">
           <input class="form-control m-auto" type="text" name="add" placeholder="add task" />
         </form>
@@ -22,6 +20,7 @@ addCardBtn.addEventListener('click', e => {
     </div>
   `;
   cardsContainer.innerHTML += html;
+  e.target.reset();
 });
 
 // delete card
@@ -57,7 +56,7 @@ cardsContainer.addEventListener('click', e => {
   }
 });
 
-// add title to new card
+// TODOS:
 // edit title of existing cards
 // edit existing tasks
 // reorder tasks

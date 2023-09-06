@@ -9,6 +9,9 @@ body{
 .card{
     margin: 1em auto;
 }
+.add-card{
+    max-width: 400px;
+}
 .delete-card{
     cursor: pointer;
 }
