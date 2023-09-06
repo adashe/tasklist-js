@@ -28,7 +28,7 @@ addCard.addEventListener('submit', e => {
 // delete card
 cardsContainer.addEventListener('click', e => {
   if(e.target.classList.contains('delete-card')){
-      e.target.parentElement.parentElement.remove();
+      e.target.parentElement.parentElement.parentElement.remove();
   }
 });
 
