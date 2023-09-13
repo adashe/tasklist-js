@@ -6,12 +6,13 @@ When I am organizing projects, I often want to break them down into subtasks or 
 
 My first attempt at a task organizer was my project "Tasklist," which accomplished much of my vision, but required a full-page reload for every action. My goal in Tasklist-JS was to create a lighter-weight task organzier with a smoother UI/UX using JavaScript event handlers.
 
-Future updates may include fancier styling, integration with a database to store lists for future access, and the ability to edit text or strikethrough a task or card instead of deleting them.
+Future updates may include fancier styling, integration with a database to store lists for future access, reorder cards and tasks, and the ability to edit text or strikethrough a task or card instead of deleting them.
 
 ## Features
 
 - Create and delete cards
 - Create and delete tasks
+- Respond to changes in browser dimensions
 
 ## Tech
 
