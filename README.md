@@ -22,4 +22,4 @@ Tasklist was built using:
 - JavaScript
 
 ## Demo
-You can view a brief demo of Tasklist-JS [here](https://youtu.be/gVLWT_23cUE).
+You can view a brief demo of Tasklist-JS [here](https://youtu.be/ohvsz-jyoZ8?si=9L8jOay5HBgUxIom).
